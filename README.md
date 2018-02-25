@@ -3,7 +3,7 @@ Timon ROSE / Killian BRUN
 ----------Configuration Base de donnée, utilisation des scripts----------
 
 Téléchargez sur la machine virtuelle les deux scripts ainsi que la base de donnée en .tar.gz
-Faire la commande:  - Faire un cd là où se situe les éléments une fois téléchargés
+Faire la commande:  - cd là où se situe les éléments une fois téléchargés
                     - gunzip appli_web.tar.gz
                     - tar -xf appli_web.tar
                     - sudo mv appl_web /var/www/html
@@ -27,6 +27,8 @@ il est préferable d'executer les scripts en root avec la commande : sudo su
 pour les executer faire : <sh Backup.sh>
 Ce script permet de créer un dossier backup, une sauvegarde est crée dans le dossier 
 /var/www/html/Backup/backups/mysql_backup/[la date à laquelle le script à été lancé)
-nous avons donc un fichier en .tar.gz.De plus, Backup.sh supprime les sauvegardes de plus de 7 jours.
+nous avons donc un fichier en .tar.gz.
 
-Concernant Restore.sh, il permet de restaurer la dernière sauvegarde en date. 
+Concernant Restore.sh, il permet de restaurer la dernière sauvegarde en date et en fait copie dans le repertoire locale.
+Nous pouvons imaginer mettre se dossier dans un disque dur externe à chaque sauvegarde, et ainsi avoir toujours une sauvegarde 
+concrète en cas d'incendie ou autre !

@@ -27,6 +27,6 @@ il est préferable d'executer les scripts en root avec la commande : sudo su
 pour les executer faire : <sh Backup.sh>
 Ce script permet de créer un dossier backup, une sauvegarde est crée dans le dossier 
 /var/www/html/Backup/backups/mysql_backup/[la date à laquelle le script à été lancé)
-nous avons donc un fichier en .tar.gz, permettant de reprendre les étapes vue précédemment 
-pour restaurer une sauvegarde spécifique.
-Concernant Restore.sh, il permet de restaurer la dernière sauvegarde en date.
+nous avons donc un fichier en .tar.gz.De plus, Backup.sh supprime les sauvegardes de plus de 7 jours.
+
+Concernant Restore.sh, il permet de restaurer la dernière sauvegarde en date. 

@@ -23,7 +23,6 @@ Créez une nouvelle base de donnée en cliquant sur "nouvelle base de données",
 "/var/www/html/appli_web/parc_informatique.sql" puis enregistrer en bas de la page.
 
 Retournez ensuite sur le terminal
-il est préferable d'executer les scripts en root avec la commande : sudo su
 pour les executer faire : <sh Backup.sh>
 Ce script permet de créer un dossier backup, une sauvegarde est crée dans le dossier 
 /var/www/html/Backup/backups/mysql_backup/[la date à laquelle le script à été lancé)
